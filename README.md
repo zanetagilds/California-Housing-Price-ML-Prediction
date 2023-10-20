@@ -32,7 +32,7 @@ Oleh karena itu, berikut merupakan harga prediksi rumah apabila terjadi overesti
 - Harga prediksi yang underestimate: $206.824 - $36.17 =  $210.441
 
 
-## Rekomendasi
+## Recommendation
 1. **Pemanfaatkan Model Machine Learning**: disarankan untuk mengimplementasikan model machine learning dalam proses prediksi harga rumah. Model ini dapat memberikan prediksi yang lebih akurat dan efisien daripada metode konvensional. Selain itu, lakukan validasi model secara berkala untuk memastikan bahwa model machine learning tetap akurat seiring berjalannya waktu. Hal ini penting karena pasar real estate cenderung berubah seiring berjalannya waktu.
 
 2. **Optimisasi Waktu**: Manfaatkan model machine learning untuk menghasilkan prediksi dalam waktu yang lebih singkat. Dengan demikian, real estate developer mampu memprediksi harga dengan waktu yang cenderung singkat dibandingkan metode konvensional.
