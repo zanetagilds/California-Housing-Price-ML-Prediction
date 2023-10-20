@@ -21,16 +21,20 @@ Berdasarkan permasalahan tersebut, goals dalam pemodelan California Housing Pric
 2. Prediksi dilakukan dalam waktu yang cenderung sebentar
 
 ## Conclusion and Impact of the Model on Business
-1. **Dari segi biaya dan waktu**
-    Untuk memprediksi harga rumah, penelitian real estate developer membutuhkan waktu 8 minggu, tetapi dengan machine learning membutuhkan waktu 1 hingga 3 hari. Biaya penelitian real estate developer adalah $100 sehingga totalnya adalah $5.600, sedangkan maksimal biaya dengan machine learning adalah $300. Dengan menggunakan machine learning, anggaran dapat  dihemat dan waktu pelaksanaan menjadi lebih singkat.
-2. **Dari segi actual dan predicted price**
-    Nilai error sebanyak 17.5338% dengan rata-rata harga rumah dari kolom median_house_value adalah $206.824. Perhitungannya adalah sebagai berikut:
-    17.5338% dari $206.824 adalah $36.17.
+1. **XGBoost** menunjukkan sebagai **model terbaik** untuk memprediksi harga yang akurat dan dengan waktu yang singkat. Penggunaan hyperparameter setelah dituning terbukti untuk meningkatkan akurasi dari yang sebelum dituning.
 
-Oleh karena itu, berikut merupakan harga prediksi rumah apabila terjadi overestimation dan underestimation
-- Harga prediksi yang overestimate: $206.824 + $36.17 =  $204.207
-- Harga prediksi yang underestimate: $206.824 - $36.17 =  $210.441
+2. **Harga rumah dapat diprediksi dengan nilai error dari MAPE sebesar 17.5338%** yang dapat diasumsikan bahwa prediksi harga rumah mengalami underestimate atau overestimate. Namun, scatterplot antara harga aktual dengan prediksi menunjukkan underestimation. Hal tersebut akan dijelaskan lebih lanjut pada impact kepada business.
 
+3. **Impact Model ke Business**
+a. **Aspek perbandingan biaya dan waktu**
+Untuk memprediksi harga rumah, penelitian real estate developer membutuhkan waktu 8 minggu, tetapi dengan machine learning membutuhkan waktu 1 hingga 3 hari. Biaya penelitian real estate developer adalah $100 sehingga totalnya adalah $5.600, sedangkan maksimal biaya dengan machine learning adalah $300. Dengan menggunakan machine learning, anggaran dapat  dihemat dan waktu pelaksanaan menjadi lebih singkat.
+
+b. **Dari segi actual dan predicted price**
+Nilai error sebanyak 17.5338% dengan mean dari kolom median_house_value adalah $206.824. Perhitungannya adalah sebagai berikut:
+17.5338% dari $206.824 adalah $36.17
+Harga prediksi yang overestimate: $206.824 + $36.17 =  $206.860
+Harga prediksi yang underestimate: $206.824 - $36.17 =  $170.654
+**Oleh karena itu, dapat disimpulkan bahwa harga prediksi rumah mengalami underestimate sebesar $170.654.**
 
 ## Recommendation
 1. **Pemanfaatkan Model Machine Learning**: disarankan untuk mengimplementasikan model machine learning dalam proses prediksi harga rumah. Model ini dapat memberikan prediksi yang lebih akurat dan efisien daripada metode konvensional. Selain itu, lakukan validasi model secara berkala untuk memastikan bahwa model machine learning tetap akurat seiring berjalannya waktu. Hal ini penting karena pasar real estate cenderung berubah seiring berjalannya waktu.
